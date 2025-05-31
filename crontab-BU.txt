@@ -1,0 +1,12 @@
+PATH=/opt/anaconda3/bin:/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# （分）   （時）（日）（月）　（曜日）　（実行するコマンド）
+
+1,5,10,15,20,25,30,35,40,45,50,55   *   *   *   *   python /Users/suusan/Documents/Python_cron/BitBank.py >> /Users/suusan/Documents/Python_cron/cron.log 2>&1
+
+0   */1   *   *   *   python /Users/suusan/Documents/Python_cron/a_xrp_graph.py >> /Users/suusan/Documents/Python_cron/cron2.log
+
+
+以下メモ
+crontb 消失時に使うときは　UTF-8 に変更してください
+分を*にすると、毎分実行される。
